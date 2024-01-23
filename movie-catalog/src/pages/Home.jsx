@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import { MovieCard } from "../components/MovieCard";
+import { useEffect, useState } from "react";
+
+import { MoviesContainer } from "../components/MoviesContainer";
 
 import "./MovieGrid.css";
 
@@ -20,22 +21,10 @@ export const Home = () => {
     getTopMovies(topMoviesUrl);
   }, []);
 
-  const MoviesContainer = () => {
-    const isLoading = topMovies.length === 0;
-
-    return (
-      <div className="movies-container">
-        {isLoading && <p>Carregando...</p>}
-        {!isLoading &&
-          topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
-      </div>
-    );
-  };
-
   return (
     <div className="container">
       <h2 className="title">Melhores filmes:</h2>
-      <MoviesContainer />
+      <MoviesContainer topMovies={topMovies} />
     </div>
   );
 };
