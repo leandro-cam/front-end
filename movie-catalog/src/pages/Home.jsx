@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { MovieCard } from "../components/MovieCard";
 
+import "./MovieGrid.css";
+
 const TMDB_API_URL = import.meta.env.VITE_TMDB_API_URL;
 const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -25,11 +27,7 @@ export const Home = () => {
       <div className="movies-container">
         {isLoading && <p>Carregando...</p>}
         {!isLoading &&
-          topMovies.map((movie) => (
-            <p key={movie.id}>
-              <MovieCard movie={movie} />
-            </p>
-          ))}
+          topMovies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
     );
   };
