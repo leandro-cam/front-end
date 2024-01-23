@@ -36,7 +36,6 @@
 }
 
 #navbar form button:hover {
-  background-color: transparent;
-  color: #f7d354;
+  background-color: #b8930c;
   border-color: #b8930c;
 }
