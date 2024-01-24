@@ -20,7 +20,7 @@ export const Home = () => {
   useEffect(() => {
     const topMoviesUrl = `${TMDB_API_URL}/top_rated?api_key=${TMDB_API_KEY}`;
     getTopMovies(topMoviesUrl);
-  }, []);
+  });
 
   return (
     <div className="container">
