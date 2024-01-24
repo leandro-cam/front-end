@@ -9,6 +9,7 @@ const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 export const Home = () => {
   const [topMovies, setTopMovies] = useState([]);
+
   const getTopMovies = async (url) => {
     const res = await fetch(url);
     const data = await res.json();
@@ -24,7 +25,7 @@ export const Home = () => {
   return (
     <div className="container">
       <h2 className="title">Melhores filmes:</h2>
-      <MoviesContainer topMovies={topMovies} />
+      <MoviesContainer movies={topMovies} />
     </div>
   );
 };
