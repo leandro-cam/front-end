@@ -1,0 +1,58 @@
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.movie-detail .movie-card {
+  text-align: center;
+}
+
+.movie-detail svg {
+  font-size: 1.5rem;
+  color: #f7d354;
+}
+
+.movie-detail .movie-card img,
+.movie-detail .movie-card h2,
+.movie-detail .movie-card p {
+  margin-bottom: 1rem;
+}
+
+.movie-detail .movie-card h2 {
+  font-size: 2rem;
+}
+
+.movie-detail .movie-card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem
+}
+
+.movie-detail .tagline {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.movie-detail .info {
+  margin-bottom: 1.5rem;
+}
+
+.movie-detail .info h3 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.movie-detail .description {
+  padding-bottom: 10rem;
+}
+
+.movie-detail .description p {
+  text-align: justify;
+  line-height: 1.4rem;
+}
