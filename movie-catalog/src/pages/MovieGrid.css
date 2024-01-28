@@ -10,11 +10,11 @@
 
 .movies-container {
   display: grid;
-  grid-template-columns: repeat(3, 30%);
+  grid-template-columns: repeat(3, 31.1%);
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 3.33%;
+  column-gap: 3.33%;
   row-gap: 1.4%;
 }
 
