@@ -12,6 +12,46 @@
   gap: 0.5rem;
 }
 
+#navbar .genres {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#navbar .genre-button {
+  color: #f7d354;
+  transition: 0.5s;
+  padding: 0px 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-style: none;
+}
+
+#navbar .genre-button:hover {
+  cursor: pointer;
+  color: #b8930c;
+}
+
+#navbar .selected-genre {
+  color: black;
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+#navbar .selected-genre:hover {
+  color: black;
+}
+
+#navbar .selected-genre svg {
+  font-size: 2rem;
+}
+
 #navbar form {
   display: flex;
   gap: 0.5rem;
