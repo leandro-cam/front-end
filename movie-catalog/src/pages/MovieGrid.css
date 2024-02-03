@@ -16,6 +16,14 @@
   margin: 0 auto;
   column-gap: 3.33%;
   row-gap: 1.4%;
+  position: relative;
+}
+
+.movies-container .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .movies-container div {

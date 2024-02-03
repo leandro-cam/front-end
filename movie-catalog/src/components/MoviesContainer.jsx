@@ -1,13 +1,13 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 import { MovieCard } from "./MovieCard";
 
-export const MoviesContainer = ({movies}) => {
+export const MoviesContainer = ({ movies }) => {
   const isLoading = !movies.length;
 
   return (
     <div className="movies-container">
-      {isLoading && <p>Carregando...</p>}
+      {isLoading && <p className="loading">Carregando...</p>}
       {!isLoading &&
         movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
     </div>
@@ -15,5 +15,5 @@ export const MoviesContainer = ({movies}) => {
 };
 
 MoviesContainer.propTypes = {
-  movies: PropTypes.array.isRequired
-}
+  movies: PropTypes.array.isRequired,
+};
