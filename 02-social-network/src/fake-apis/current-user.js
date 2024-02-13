@@ -1,13 +1,13 @@
-import ProfieImage from "../assets/imgs/CurentProfile.jpeg";
-import CoverPhoto from "../assets/imgs/CoverPhotos.jpg";
+import profileImage from "../assets/imgs/CurentProfile.jpeg";
+import coverPhoto from "../assets/imgs/CoverPhotos.jpg";
 
 const currentUser = [
   {
     id: "me",
     name: "Beg Joker",
     username: "@thebegjoker",
-    ProfieImage: ProfieImage,
-    CoverPhoto: CoverPhoto,
+    profileImage,
+    coverPhoto,
   },
 ];
 
