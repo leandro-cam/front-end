@@ -89,3 +89,10 @@ p {
   background: var(--color-red);
   color: white;
 }
+
+main {
+  display: grid;
+  grid-template-columns: 20% 54% 23%;
+  gap: 3%;
+  width: 100%;
+}
