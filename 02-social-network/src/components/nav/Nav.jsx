@@ -10,6 +10,8 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
+import User from "../user/User";
+
 import currentUser from "../../fake-apis/current-user";
 
 import "./nav.css";
@@ -46,10 +48,11 @@ export default function Nav() {
             <FontAwesomeIcon icon={faBars} />
           </Link>
 
-          <div className="user">
-            <img src={currentUser.profileImage} alt="" />
-            <h4>Beg Joker</h4>
-          </div>
+          <User
+            src={currentUser.profileImage}
+            alt=""
+            userName={currentUser.name}
+          />
         </div>
       </div>
     </nav>
