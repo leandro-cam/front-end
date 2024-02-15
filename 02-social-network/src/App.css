@@ -20,6 +20,16 @@
   --color-red: red;
 }
 
+.dark-mode {
+  --text-color: white;
+  --color-background: black;
+  --color-card: #111111;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 991px;
   width: 100%;

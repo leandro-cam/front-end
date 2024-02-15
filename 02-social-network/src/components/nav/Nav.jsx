@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import User from "../user/User";
+import DarkMode from "../dark-mode/DarkMode";
 
 import currentUser from "../../fake-apis/current-user";
 
@@ -41,9 +42,13 @@ export default function Nav() {
           <Link to="/chat-box/id">
             <FontAwesomeIcon icon={faEnvelope} />
           </Link>
+
           <Link to="/">
             <FontAwesomeIcon icon={faBell} />
           </Link>
+
+          <DarkMode />
+
           <Link to="/">
             <FontAwesomeIcon icon={faBars} />
           </Link>
