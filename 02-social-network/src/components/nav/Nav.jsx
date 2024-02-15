@@ -47,7 +47,7 @@ export default function Nav() {
           </Link>
 
           <div className="user">
-            <img src={currentUser.map((user) => user.profileImage)} alt="" />
+            <img src={currentUser.profileImage} alt="" />
             <h4>Beg Joker</h4>
           </div>
         </div>
