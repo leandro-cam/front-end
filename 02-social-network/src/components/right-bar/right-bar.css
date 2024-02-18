@@ -1,0 +1,15 @@
+.right-bar {
+  height: calc(100vh - 3.6rem);
+  /* background-color: var(--color-card); */
+  position: sticky;
+  top: 3.6rem;
+  overflow: auto;
+}
+
+.right-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.right-bar-container {
+  width: 80%;
+}
