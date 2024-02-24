@@ -13,3 +13,15 @@
 .right-bar-container {
   width: 80%;
 }
+
+@media (max-width: 1024px) {
+  .right-bar-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-bar {
+    display: none;
+  }
+}

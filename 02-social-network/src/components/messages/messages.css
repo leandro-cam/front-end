@@ -42,6 +42,8 @@ hr {
 
 .message .user {
   position: relative;
+  height: fit-content;
+  width: fit-content;
 }
 
 .green-active {
