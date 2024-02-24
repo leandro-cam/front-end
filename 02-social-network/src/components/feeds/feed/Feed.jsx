@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +10,14 @@ import {
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
 
+import Comments from "../../comments/Comments";
+
 export default function Feed({ feed }) {
+  const [openComment, setOpenComment] = useState(false);
+  const commentHandler = () => {
+    setOpenComment(!openComment);
+  };
+
   return (
     <div className="feed">
       <div className="top-content">
@@ -40,7 +48,7 @@ export default function Feed({ feed }) {
           </span>
         </div>
 
-        <div className="action-item">
+        <div className="action-item" onClick={commentHandler}>
           <span>
             <FontAwesomeIcon icon={faComment} /> 2 comments
           </span>
@@ -52,6 +60,8 @@ export default function Feed({ feed }) {
           </span>
         </div>
       </div>
+
+      {openComment && <Comments />}
     </div>
   );
 }
