@@ -1,0 +1,98 @@
+.stories {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.story {
+  height: 170px;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  border-radius: 0.5rem;
+}
+
+.story .user {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+}
+
+.story::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(transparent, transparent, var(--color-primary));
+}
+
+.story > img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.story .name {
+  color: white;
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
+.user-story {
+  margin-right: 10px;
+}
+
+.user-story label {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-size: 1.4rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.user-story label svg {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.user-story label input {
+  display: none;
+}
+
+.user-story h5 {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .story {
+    height: 100% !important;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .story .user {
+    display: none;
+  }
+
+  .story .name {
+    display: none;
+  }
+
+  .user-story label {
+    font-size: 1rem;
+  }
+}
