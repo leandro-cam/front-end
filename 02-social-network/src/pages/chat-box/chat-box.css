@@ -1,6 +1,6 @@
 .chat-box {
   background-color: var(--color-card);
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
